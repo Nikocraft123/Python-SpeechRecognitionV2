@@ -1,0 +1,29 @@
+# IMPORTS
+import pyaudio as pa
+
+
+# VARIABLES
+
+# Credit information
+AUTHOR = "Nikocraft"
+VERSION = "Beta 2.1"
+
+# Audio settings
+CHUNK_SIZE = 1024
+SAMPLE_FORMAT = pa.paInt16
+CHANNELS = 1
+SAMPLES_PER_SECOND = 44100
+
+# Output files
+OUTPUT_AUDIO = "Latest.wav"
+OUTPUT_TEXT = "Latest.txt"
+
+# States
+S_IDLE = 421
+S_RECORD = 422
+S_STOP_RECORD = 423
+S_RECOGNIZE_RECORD = 424
+S_SHOW_RECORD_RESULT = 425
+S_SELECT_FILE = 426
+S_RECOGNIZE_FILE = 427
+S_SHOW_FILE_RESULT = 428
